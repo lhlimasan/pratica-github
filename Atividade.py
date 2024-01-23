@@ -1,4 +1,4 @@
-def contar_caracteres_incluindo_espacos(texto):
+def contar_caracteres(texto):
     return len(texto)
 
 def contar_palavras(texto):
@@ -7,7 +7,7 @@ def contar_palavras(texto):
 
 while True:
     print("Escolha uma opção:")
-    print("1. Contar caracteres (incluindo espaços)")
+    print("1. Contar caracteres")
     print("2. Contar palavras")
     print("3. Sair")
 
@@ -15,8 +15,8 @@ while True:
 
     if opcao == "1":
         texto = input("Digite o texto: ")
-        resultado = contar_caracteres_incluindo_espacos(texto)
-        print(f"O número de caracteres (incluindo espaços) é: {resultado}")
+        resultado = contar_caracteres(texto)
+        print(f"O número de caracteres é: {resultado}")
     elif opcao == "2":
         texto = input("Digite o texto: ")
         resultado = contar_palavras(texto)
